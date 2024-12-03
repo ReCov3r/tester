@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Maven+Pro:wght@400..900&display=swap');
+        </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="another.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Re_Cov3r</title>
+    <link rel="icon" type="image/png" href="Re_Cov.jpg">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html#Ab">
+                  <img src="Re_Cov.jpg" alt="logo">
+                </a>
+              </div>
+            <ul class="menu nav-menu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Category<span><i class="fa-solid fa-circle-arrow-down"></i></span> </button>
+                    <div class="dropdown-content">
+                        <a href="draw.html">Drawing</a>
+                        <a href="vid.html">Video</a>
+                        <a href="sticker.html">Sticker&Emoji</a>
+                        <a href="Gif and Animation.html">Gif&Animation</a>
+                        <a href="Contest Art.html">Contest Work</a>
+                    </div>
+                </div>
+            </ul>
+    </nav>
+    </div>
+</header>
+    <div class="container">
+
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <video src="Neko DJ.mp4" alt="Image 1" class="card-image" controls></video>
+                    <div class="title">Neko Dj Dance</div>
+                    <div class="description">Short Animation Edit from viral meme</div>
+                    <a href="more.html" class="text_1"> Read More </a>
+                </div>
+                <div class="card">
+                    <video src="pinball.mp4" alt="Image 1" class="card-image" controls></video>
+                    <div class="title">Game Pinball Rtythm PJ</div>
+                    <div class="description">Motion+Animation Edit by Me and the boys</div>
+                    <a href="more2.html" class="text_1"> Read More </a>
+                </div>
+                <div class="card">
+                    <video src="sweet.mp4" alt="Image 1" class="card-image" controls></video>
+                    <div class="title">Sweet Dream</div>
+                    <div class="description">First animation pj from emoji contest</div>
+                    <a href="more3.html" class="text_1"> Read More </a>
+                </div>
+<div class="card">
+    <video src="standoutfitin.mp4" alt="Image 1" class="card-image" controls></video>
+    <div class="title">Stand Out Fit In</div>
+    <div class="description">MV animation with lyric by me and the boys</div>
+    <a href="more4.html" class="text_1"> Read More </a>
+</div>
+<div class="card">
+    <video src="msm.mp4" alt="Image 1" class="card-image" controls></video>
+    <div class="title">That Day</div>
+    <div class="description">MV about musuem Siam PJ by me and the boys</div>
+    <a href="more5.html" class="text_1"> Read More </a>
+</div>
+<div class="card">
+    <video src="salapao.mp4" alt="Image 1" class="card-image" controls></video>
+    <div class="title">Salapao Showcase</div>
+    <div class="description">Short Edit for Showcase Salapao by me and the boys</div>
+    <a href="more6.html" class="text_1"> Read More </a>
+</div>
+<script>
+            // เลือกทุก card
+            const cards = document.querySelectorAll('.card');
+
+// ฟังก์ชันตรวจสอบว่าการ์ดอยู่ใน viewport หรือไม่
+function checkVisibility() {
+    cards.forEach(card => {
+        const rect = card.getBoundingClientRect(); // ขอบเขตของ card
+        if (rect.top < window.innerHeight - 50) { // ถ้าการ์ดใกล้ถึง viewport
+            card.classList.add('slide-in');
+        }
+    });
+}
+
+// เรียกใช้เมื่อโหลดหน้าหรือเลื่อน scroll
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
+const images = document.querySelectorAll('.card img');
+const popup = document.getElementById('popup');
+const popupImage = document.getElementById('popupImage');
+const closePopup = document.getElementById('closePopup');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+
+let currentIndex = 0;
+</script>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+
+</html>
+<div class="marquee">
+    <img src="doro walk.gif" width="75" height="75" alt="Natural" />
+    <img src="doro walk.gif" width="75" height="75" alt="Natural" />
+    <img src="doro walk.gif" width="75" height="75" alt="Natural" />
+</div>
